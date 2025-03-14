@@ -15,16 +15,16 @@
   --dracula-selection: #cfcfde;
   --dracula-foreground: #1f1f1f;
   --dracula-comment: #635d97;
-  --dracula-cyan: #036a96;
-  --dracula-green: #14720a;
-  --dracula-orange: #a34d14;
-  --dracula-pink: #a3134d;
-  --dracula-purple: #644ac9;
   --dracula-red: #cb3a2a;
+  --dracula-orange: #a34d14;
   --dracula-yellow: #836e15;
-  --dracula-link: #036a96;
+  --dracula-green: #14720a;
+  --dracula-cyan: #036a96;
+  --dracula-purple: #644ac9;
+  --dracula-pink: #a3134d;
+  --dracula-link: var(--dracula-cyan);
   --dracula-link-visited: #3a4265;
-  --dracula-link-hover: #a3134d;
+  --dracula-link-hover: var(--dracula-pink);
   
   /* Base theme settings */
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -60,7 +60,7 @@
   --graphite: var(--dracula-background);
   --graphite-25: var(--dracula-selection);
   --graphite-50: var(--dracula-comment);
-  --graphite-70: var(--dracula-pink);
+  --graphite-70: var(--dracula-comment);
   --graphite-100: var(--dracula-purple);
   --graphite-200: var(--dracula-red);
   --graphite-300: var(--dracula-orange);
@@ -77,7 +77,7 @@
   /* Chrome palette */
   --chrome-25: var(--dracula-comment);
   --chrome-50: var(--dracula-comment);
-  --chrome-70: var(--dracula-pink);
+  --chrome-70: var(--dracula-comment);
   --chrome-100: var(--dracula-purple);
   --chrome-200: var(--dracula-red);
   --chrome-300: var(--dracula-orange);
@@ -103,7 +103,7 @@
   --primary: var(--dracula-foreground);
   --primary-25: var(--dracula-selection);
   --primary-50: var(--dracula-comment);
-  --primary-70: var(--dracula-pink);
+  --primary-70: var(--dracula-comment);
   --primary-100: var(--dracula-purple);
   --primary-200: var(--dracula-red);
   --primary-300: var(--dracula-orange);
@@ -298,36 +298,36 @@
     --dracula-background: #282a36;
     --dracula-selection: #44475a;
     --dracula-foreground: #f8f8f2;
-    --dracula-comment: #6272a4;
-    --dracula-cyan: #8be9fd;
-    --dracula-green: #50fa7b;
-    --dracula-orange: #ffb86c;
-    --dracula-pink: #ff79c6;
-    --dracula-purple: #bd93f9;
+    --dracula-comment: #6272a4;  
     --dracula-red: #ff5555;
+    --dracula-orange: #ffb86c;
     --dracula-yellow: #f1fa8c;
-    --dracula-link: #8be9fd;
+    --dracula-green: #50fa7b;
+    --dracula-cyan: #8be9fd;
+    --dracula-purple: #bd93f9;
+    --dracula-pink: #ff79c6;
+    --dracula-link: var(--dracula-cyan);
     --dracula-link-visited: #697ec0;
-    --dracula-link-hover: #ff79c6;
+    --dracula-link-hover: var(--dracula-pink);
   }
 
   @media (prefers-color-scheme: dark) {
     .theme_moon_dark_conditional, .theme_dark_conditional {
-        /* Dracula (Dark) Color Palette */
-        --dracula-background: #282a36;
-        --dracula-selection: #44475a;
-        --dracula-foreground: #f8f8f2;
-        --dracula-comment: #6272a4;
-        --dracula-cyan: #8be9fd;
-        --dracula-green: #50fa7b;
-        --dracula-orange: #ffb86c;
-        --dracula-pink: #ff79c6;
-        --dracula-purple: #bd93f9;
-        --dracula-red: #ff5555;
-        --dracula-yellow: #f1fa8c;
-        --dracula-link: #8be9fd;
-        --dracula-link-visited: #697ec0;
-        --dracula-link-hover: #ff79c6;
+      /* Dracula (Dark) Color Palette */
+      --dracula-background: #282a36;
+      --dracula-selection: #44475a;
+      --dracula-foreground: #f8f8f2;
+      --dracula-comment: #6272a4;  
+      --dracula-red: #ff5555;
+      --dracula-orange: #ffb86c;
+      --dracula-yellow: #f1fa8c;
+      --dracula-green: #50fa7b;
+      --dracula-cyan: #8be9fd;
+      --dracula-purple: #bd93f9;
+      --dracula-pink: #ff79c6;
+      --dracula-link: var(--dracula-cyan);
+      --dracula-link-visited: #697ec0;
+      --dracula-link-hover: var(--dracula-pink);
     }
   }
   
